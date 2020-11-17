@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/galaxy"
+    >
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_width="200dp"
+       android:layout_height="200dp"
+       android:layout_gravity="center"
+       android:layout_marginTop="30dp"
+       android:src="@drawable/shat1"
+       app:civ_border_color="#FFFFFF"
+       app:civ_border_width="6dp" />
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="60dp"
+     >
+
+
+      <AutoCompleteTextView
+          android:id="@+id/username"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="enter user name"
+          android:paddingLeft="45dp"
+          android:textColor="#fff"
+          android:textColorHint="#fff"
+          android:completionThreshold="4"
+          android:completionHint="enter user name"
+          />
+
+      <ImageView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:padding="5dp"
+          android:src="@drawable/ic_baseline_account_box_24"
+          android:id="@+id/img_person"/>
+      <AutoCompleteTextView
+          android:id="@+id/email"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="email"
+          android:textColorHint="#fff"
+          android:paddingLeft="45dp"
+          android:inputType="textPassword"
+          android:layout_below="@id/username"
+          android:layout_marginTop="10dp"
+          android:textColor="#fff"
+          android:completionThreshold="4"
+          android:completionHint="enter valid email"
+          />
+
+      <ImageView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:padding="5dp"
+          android:layout_marginTop="15dp"
+          android:src="@drawable/ic_baseline_email_24"
+          android:id="@+id/img_email"
+          android:layout_below="@id/img_person"/>
+
+      <AutoCompleteTextView
+          android:id="@+id/password"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Password"
+          android:textColorHint="#fff"
+          android:paddingLeft="45dp"
+          android:inputType="textPassword"
+          android:layout_below="@id/email"
+          android:textColor="#fff"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="20dp"
+          android:completionThreshold="4"
+          android:completionHint="enter user name"
+          />
+
+      <ImageView
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:padding="5dp"
+          android:layout_marginTop="20dp"
+          android:src="@drawable/ic_baseline_lock_24"
+          android:id="@+id/img_password"
+          android:layout_below="@id/img_email"/>
+
+
+   </RelativeLayout>
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="GO To Chat"
+       android:textColor="#21635E"
+       android:background="@drawable/background"
+       android:id="@+id/btn_1"
+       android:layout_margin="10dp"
+       android:layout_gravity="clip_vertical"
+       android:layout_marginTop="100dp"
+       />
+
+   <Button
+       android:id="@+id/btn_2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="clip_vertical"
+       android:layout_margin="10dp"
+       android:layout_marginTop="15dp"
+       android:background="@drawable/background"
+       android:text="sign up"
+       android:textColor="#21635E" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Error Task5</string>
+    <string-array name="user_name">
+        <item>manar_ahmed</item>
+        <item>MeRoO_AhMeD</item>
+        <item>ahmed</item>
+        <item>mohamed</item>
+        <item>sara</item>
+        <item>sara_mahmoud</item>
+        <item>soad</item>
+
+    </string-array>
+
+    <string-array name="password">
+        <item>manar_ahmed</item>
+        <item>MeRoO_AhMeD</item>
+        <item>ahmed</item>
+        <item>mohamed</item>
+        <item>sara</item>
+        <item>sara_mahmoud</item>
+        <item>soad</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/space3"
+    tools:context=".SignUpActivity"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WELCOME        SIR,"
+        android:textSize="50dp"
+        android:textColor="#01DCF8"
+        android:textStyle="bold|italic"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+
+        >
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter user name"
+        android:textColorHint="#fff"
+        android:paddingLeft="45dp"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_account_box_24"
+        android:id="@+id/img_person"/>
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:paddingLeft="45dp"
+        android:inputType="textPassword"
+        android:layout_below="@id/edt_username"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#fff"
+        android:layout_marginBottom="20dp"
+        />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/ic_baseline_lock_24"
+        android:id="@+id/img_password"
+        android:layout_below="@id/img_person"/>
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="email"
+            android:paddingLeft="45dp"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/edt_password"
+            android:layout_marginBottom="20dp"
+            android:textColorHint="#fff"
+
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/ic_baseline_email_24"
+            android:id="@+id/img_email"
+            android:layout_below="@id/img_password"/>
+        <EditText
+            android:id="@+id/edt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:paddingLeft="45dp"
+            android:inputType="phone"
+            android:layout_below="@id/edt_email"
+            android:layout_marginBottom="20dp"
+            android:textColorHint="#fff"
+
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/ic_baseline_phone_24"
+            android:id="@+id/img_phone"
+            android:layout_below="@id/img_email"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background"
+        android:text="show"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#000" />
+</LinearLayout>
